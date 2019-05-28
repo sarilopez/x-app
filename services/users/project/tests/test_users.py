@@ -41,7 +41,7 @@ class TestUserService(BaseTestCase):
             data = json.loads(response.data.decode())
             self.assertEqual(response.status_code, 201)
             self.assertIn(
-                'rosariolopez@upeu.edu.pe ha sido agregado exitosamente',
+                'rosariolopez@upeu.edu.pe ha sido agregado',
                 data['message']
             )
             self.assertIn('success', data['status'])
